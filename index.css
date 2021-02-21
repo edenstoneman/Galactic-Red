@@ -1,0 +1,166 @@
+body {
+    background-color: #333;
+    margin: 0;
+    opacity: 0.9;
+}
+a {
+    text-decoration: none !important;
+}
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+}
+.topnav #myLinks {
+     display: none;
+}
+.topnav a {
+    color: white;
+    padding: 20px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+    font-family: 'Abel', sans-serif;
+    font-weight: bold;
+}
+.topnav a.icon {
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: -8px;
+    color: #fff;
+}
+.topnav a:hover {
+    color: #fff;
+}
+.active {
+    background-color: #000;
+    color: white;
+}
+.fa-navicon:before, .fa-reorder:before, .fa-bars:before {
+    content: "\f0c9";
+}
+nav {
+    display: none;
+}
+nav a {
+    margin: 3px;
+    font-size: 20px;
+    font-family: 'Abel', sans-serif;
+    font-weight: bold;
+    font-weight: normal;
+    color: #fff;
+    text-transform: uppercase;
+}
+nav a:hover {
+    color: #fff !important;
+}
+.highlight {
+    color: #333 !important;
+}
+
+.flex-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    min-height: 500px;
+
+}
+.para-text {
+    background: #eb8439;
+    /*#1894eb;*/
+    padding: 5px;
+    width: 400px;
+    height: 300px;
+    margin-top: 100px;
+    line-height: 150px;
+    color: white;
+    font-family: 'Abel', sans-serif;
+    font-weight: bold;
+    font-size: 3em;
+    text-align: center;
+    box-shadow: 0px 0px 35px 5px rgb(0 0 0 / 75%);
+}
+
+.parallax  {
+    min-height: 800px; 
+    background-attachment: fixed;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    box-shadow: 0px 0px 50px 5px rgb(0 0 0 / 75%);
+}
+.p1 {background-image: url("img/main/GR-parallax-3.jpg");}
+.p2 {background-image: url("img/main/GR-parallax-2.jpg");}
+.p3 {background-image: url("img/main/GR-parallax-1.jpg");}
+.para-break {
+    min-height: 200px;
+}
+.para-heading {
+    min-height: 300px;
+    color: #fff;
+    text-align:center;
+    text-transform: uppercase;
+    font-family: 'Abel', sans-serif;
+    font-size: 10px; 
+}
+.para-heading h1 {
+    background: rgba(0, 0, 0, 0.6);
+    width: fit-content;
+    margin: 0 auto;
+    padding: 20px 50px;
+    box-shadow: 0px 0px 15px 5px rgb(0 0 0 / 75%);
+}
+.para-logo {
+    width: 100%;
+    max-width:200px;
+    }
+
+/* SMALLER SCREEN CSS */
+@media only screen and (min-width: 600px) {
+.parallax  { 
+    min-height: 1000px;
+    } 
+.para-logo {
+    width: 100%;
+    max-width:400px;
+}
+.topnav {
+        display:none;
+    }
+nav {
+    width:100%;
+    background-color: #333;
+    text-align:right;
+    margin: 0 auto;
+    padding: 50px 0;
+    display:inherit;
+    box-shadow: 0px 0px 15px 5px rgb(0 0 0 / 75%);
+}
+nav a {
+    margin: 50px;
+    font-size: 25px;
+}
+}
+
+/* LARGER SCREEN CSS */
+
+@media only screen and (min-width: 1400px) {
+.para-break {
+    height: 300px;
+}
+.para-heading {
+    font-size: 40px;   
+}
+.para-logo {
+    width: 100%;
+    max-width:400px;
+    }
+}
+
+
+
