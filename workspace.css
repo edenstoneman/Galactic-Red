@@ -1,0 +1,815 @@
+body {
+    background-color: #000;
+    margin: 0 auto;
+}
+a {text-decoration: none;}
+.welcome {
+    position:absolute;
+    top:25%;
+    bottom: 0;
+    left:0;
+    right: 0;
+    margin: 0 ;
+    text-align:center;
+}
+h1 {
+    margin: 50px 0;
+    font-family: 'Do Hyeon', sans-serif;
+    font-size: 28px;
+    color: #fff;
+    width:100%;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+p {
+    font-family: 'Abel', sans-serif;
+    font-size: 26px;
+    line-height: 1.5;
+    color: #fff;  
+    text-align: center;
+    font-weight: bold;
+    padding:40px;
+    background-color: rgba(15, 15, 21, 0.75);
+    margin:0 20% 3%;
+}
+
+.button {
+    color: #80b370;
+    font-family: 'Do Hyeon', sans-serif;
+    letter-spacing: 2px;
+    font-size:14px;
+    border:2px solid #80b370;
+    margin: 0px auto;
+    padding: 10px 20px;
+    text-align:center;
+    text-transform: uppercase;
+    cursor:pointer;
+    background-color: rgba(15, 15, 21, 0.75);
+}
+.button:hover {
+    background-color: #80b370;
+    color: #fff; 
+}
+.topnav {
+  overflow: hidden;
+  background-color: #000;
+  position: relative;
+}
+.topnav #myLinks {
+     display: none;
+}
+.topnav a {
+    color: white;
+    padding: 20px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+    font-family: 'Abel', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.topnav a.icon {
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: -8px;
+    color: #fff;
+}
+.topnav a:hover {
+    color: #fff;
+}
+.active {
+    background-color: #000;
+    color: white;
+}
+.fa-navicon:before, .fa-reorder:before, .fa-bars:before {
+    content: "\f0c9";
+}
+.fa {
+       float:right;
+}
+nav {
+    display: none;
+}
+nav a {
+    margin: 3px;
+    font-size: 20px;
+    font-family: 'Abel', sans-serif;
+    font-weight: bold;
+    font-weight: normal;
+    color: #fff;
+    text-transform: uppercase;
+}
+nav a:hover {
+    color: #fff !important;
+}
+.highlight {
+    border-bottom: 6px solid #80b370;
+}
+header {
+    margin: 0px 20px;
+    font-family: 'Do Hyeon', sans-serif;
+    font-size: 18px;
+    color: #80b370;
+    border-bottom: 4px dotted #626e5f;
+    width:fit-content;
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+header img {
+    opacity:0.75;
+}
+.first_section {
+    border: 10px solid #80b370;
+    margin: 45px 40px;
+    z-index: -1; 
+    background-image:url(/workspace/backgroundimg.jpeg);
+    padding: 20px 20px 40px;
+}
+#welcome_message {
+    padding:20px 40px;
+    background-color: rgba(15, 15, 21, 0.75);
+}
+#welcome_message p {
+    font-family: 'Abel', sans-serif;
+    font-size: 24px;
+    line-height: 1.5;
+    color: #fff;  
+    text-align: left;
+    font-weight: bold;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
+
+.checklist {
+    text-align:center;
+    margin:20px;
+    background-color: rgba(15, 15, 21, 0.75);
+}
+h2 {
+    font-family: 'Do Hyeon', sans-serif;
+    font-size: 16px;
+    text-align:center;
+    color: #80b370;
+    padding: 20px 0 0;
+    margin: 0;
+}
+h3{
+    display: inline-block;
+    padding: 0 20px 0;
+    font-size: 26px !important;
+    vertical-align: top;
+    font-family: 'Abel', sans-serif;
+}
+ol {
+    margin:0 auto;
+    padding: 20px;
+}
+li {
+    font-family: 'Abel', sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #fff;  
+    text-align: left;
+    padding: 0 0 10px;
+    font-weight: bold;
+}
+.outpost {
+    padding: 0;
+    margin:20px;
+    background-color: rgba(15, 15, 21, 0.75);
+}
+.outpost img {
+    opacity: 0.95;
+    width: 100%;
+    height: auto;
+}
+.second_section {
+    border: 10px solid #80b370;
+    margin: 45px 40px;
+    z-index: -1; 
+    background:url(/workspace/garage.jpg);
+    padding: 20px 20px 40px;
+}
+.mars_rover_garage {
+    margin: 40px 40px 15px;
+}
+.mars_rover_garage_intro {
+    padding: 20px;
+    margin:0px;
+    text-align:center;
+    font-family: 'Abel', sans-serif;
+    font-size:24px;
+    color: #fff;
+    font-weight:bold;
+    background-color: rgba(15, 15, 21, 0.75);
+    margin-top:40px;
+}
+.mars_rover_garage_intro span {
+    font-family: 'Do Hyeon', sans-serif;
+    color: #80b370;
+}
+h2 span {
+    background-color: rgba(15, 15, 21, 0.75);
+    padding: 10px 20px;
+}
+.manager_message {
+    background-color: #fff;
+    margin:40px 0 0;
+    padding: 40px;
+    border-radius: 30px;
+    box-shadow: 10px 10px 30px 0px rgba(0,0,0,1);
+    font-family: 'Space Mono', monospace;
+}
+.manager_message img {
+    display:inline-block;
+    max-height:100px;
+    border: 2px solid #000;
+    padding: 0;
+    margin: 0 auto;
+}
+.manager_message h3 {
+    font-family: 'Space Mono', monospace !important;
+}
+.manager_message h4 {
+    font-family: 'Space Mono', monospace !important;
+    font-size: 
+}
+
+.manager_message p{
+    color: #000 !important;
+    font-family: 'Space Mono', monospace !important;
+    font-size:18px !important;
+    margin: 20px 0 !important;
+    text-align: left !important;
+}
+.manager_message li{
+    font-size:16px;
+    color: #000;
+    font-family: 'Space Mono', monospace;
+}
+.second_section .spinks_message .row   {
+    margin-top: 0px;
+} 
+.second_section .supplies .row   {
+    margin-top: 50px;
+} 
+.supplies .column h3 {
+    padding: 20px;
+    margin:0px auto;
+    text-align:center !important;
+    color: #fff;
+    font-weight:bold;
+    display:flex;
+}
+.supplies .column p {
+    padding: 10px 20px;
+    margin:0px 0;
+    text-align:center;
+    font-family: 'Abel', sans-serif;
+    font-size:24px;
+    color: #fff;
+    font-weight:bold;
+    background: transparent;
+}
+.supplies_1, .supplies_2, .supplies_3, .supplies_4, .supplies_5, .supplies_6 {
+    height:100%;
+    margin:40px 10px;
+    padding:0 0 20px;
+}
+.supplies_1 {
+    background: linear-gradient(
+      rgba(149, 179, 112, 1), 
+      rgba(112, 79, 133, 0.85));
+}  
+.supplies_2 {
+    background: linear-gradient(
+      rgba(178, 179, 112, 1), 
+      rgba(179, 76, 112, 0.85));
+} 
+.supplies_3 {
+    background: linear-gradient(
+      rgba(112, 112, 112, 1), 
+      rgba(11, 112, 148, 0.85)); 
+}  
+.supplies_4 {
+    background: linear-gradient(
+      rgba(112, 142, 179, 1), 
+      rgba(123, 112, 79, 0.85)); 
+}  
+.supplies_5 {
+    background: linear-gradient(
+      rgba(112, 179, 167, 1), 
+      rgba(112, 18, 179, 0.85));
+}  
+.supplies_6 {
+    background: linear-gradient(
+      rgba(179, 157, 112, 1), 
+      rgba(19, 129, 112, 0.85)); 
+}
+.material-icons.md-48 { 
+    font-size: 48px; 
+}
+.icon {
+    text-align:center;
+    width:100%;
+    color:#fff;
+    padding: 20px 0;
+}
+.third_section {
+    border: 10px solid #80b370;
+    margin: 45px 40px;
+    z-index: -1; 
+    background:url(/workspace/numbers.jpg);
+    padding: 20px 20px 40px;
+}
+#martian_weight_converter {
+    margin: 40px;
+}
+.converter .row {
+   margin-top: 50px; 
+}
+.converter .row .column {
+    height:100%;
+}
+.converter .column h3 {
+    color: #fff;
+    padding: 0 0 10px;
+    display:block;
+        margin: 20px 0;
+}
+.converter_column_1 {
+    height:100%;
+}
+.converter_column_2 {
+    height: 100%;
+}
+.converter_input {
+    background-color: rgba(128, 179, 112,0.15);
+    padding: 20px 40px;
+    margin: 0 20px 0 0;
+}
+.converter_option {
+    width: fit-content;
+    margin: 0 auto;
+    padding: 10px 20px;
+    background-color: #80b370;
+    border:2px solid #80b370;
+    color: #fff;
+    display:flex;
+    font-family: 'Do Hyeon', sans-serif;
+    letter-spacing: 2px;
+    font-size:18px;
+    margin-bottom: 20px;
+    display:inline-block;
+}
+.converter_button {
+    width: fit-content;
+    margin: 0 auto;
+    padding: 10px 20px;
+    background-color: #80b370;
+    border:2px solid #80b370;
+    color: #fff;
+    display:flex;
+    font-family: 'Do Hyeon', sans-serif;
+    letter-spacing: 2px;
+    font-size:24px;
+     display:inline-block;
+    text-align: center;
+}
+.converter_button:hover {
+    background-color: transparent;
+    border:2px solid #80b370;
+    color: #fff;
+}
+.converter_output {
+    background-color: rgba(128, 179, 112,0.15);
+    padding: 20px;
+    text-align:center;
+}
+#supplyinput {
+    color: #fff;
+    font-family: 'Do Hyeon', sans-serif;
+    letter-spacing: 2px;
+    font-size:24px;
+    border:2px solid #80b370;
+    width:-webkit-fill-available;
+    margin: 0px ;
+    padding: 10px 20px;
+    background-color: transparent;
+    text-align:center;
+}
+#converter_output_answer {
+    color: #fff;
+    font-family: 'Do Hyeon', sans-serif;
+    letter-spacing: 2px;
+    font-size: 24px;
+    border: 2px solid #80b370;
+    width: -webkit-fill-available !important;
+    margin: 0px auto;
+    padding: 10px 20px;
+    min-height: 30px;
+}
+
+.fourth_section {
+    border: 10px solid #80b370;
+    margin: 45px 40px 0px;
+    z-index: -1; 
+    background-image:url(/workspace/mars-rover-pic.jpg);
+    padding:20px 20px 40px;
+}
+
+.fifth_section {
+     border: 10px solid #80b370;
+    margin: 45px 40px 0px;
+    z-index: -1; 
+    background-image:url(/workspace/hex.jpg);
+    background-size:cover;
+    padding: 20px 0 80px;
+}
+.workspacebutton {
+    color: #80b370;
+    font-family: 'Do Hyeon', sans-serif;
+    letter-spacing: 2px;
+    font-size:24px;
+    border:2px solid #80b370;
+    margin: 40px 20px;
+    padding: 10px 100px;
+    background-color: transparent;
+    text-align:center;
+    cursor:pointer;
+    width:fit-content;
+}
+.workspacebutton:hover {
+    background-color: #80b370;
+    color: #fff; 
+}
+.rover {
+    font-family: 'Do Hyeon', sans-serif;
+    font-size: 40px;
+    line-height: 1.5;
+    color: #80b370;  
+    text-align: center;
+    font-weight: bold;
+    padding:40px;
+}
+#float-bar-1{
+  width: 580px;
+  height: 20px;
+  background: #fd4d3f;
+  bottom: 0%;
+  left: 1.5%;
+  position: absolute;
+  transition-property: bottom;
+  transition-duration: 2s;
+}
+.monitor {
+    background-color: #ccc;
+    width: 600px;
+    height: 520px;
+    top: 25%;
+    right: 8%;
+    position: absolute;
+}
+.reactor {
+    font-family: 'Do Hyeon', sans-serif;
+    font-size: 40px;
+    line-height: 1.5;
+    color: #80b370;  
+    text-align: left;
+    font-weight: bold;
+    padding:0 60px;
+}
+.instructions {
+    float:left;
+    width: 40%;
+    padding: 40px 60px;
+}
+.instuctions-text {
+    font-family: 'Abel', sans-serif !important;
+    color: #fff !important; 
+    font-size: 28px;
+}
+.number {
+    font-family: 'Abel', sans-serif;
+    font-size: 19px;
+    line-height: 1.5;
+    color: #fff;  
+    text-align: center;
+    font-weight: bold;
+    padding: 0 40px;
+    background-color: rgba(15, 15, 21, 0.75);
+    margin:2% 20% 3%;
+}
+
+#container{
+  background: #ccc;
+  margin: 0;
+  display: block;
+  float: right;
+  width: 600px;
+  height: 520px;
+  top: 25%;
+  right: 8%;
+  position: absolute;
+  
+}
+.tank-1 {
+    position:absolute;
+    top: 10px;
+    left: 40px;
+}
+#view-button{
+  width: 200px;
+  height: 40px;
+  font-size: 20px;
+  border: none;
+  display: block;
+  background-color: #999;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+#codey{
+  display: none;
+  width: 150px;
+  margin: 0 auto;
+}
+#view-button-2{
+  width: 200px;
+  height: 40px;
+  font-size: 20px;
+  border: none;
+  display: block;
+  background-color: #999;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+#codey-Two{
+  display: none;
+  width: 150px;
+  margin: 0 auto;
+}
+.tank-2 {
+    position:absolute;
+    top: 10px;
+    right: 40px;
+}
+#view-button-3{
+  width: 200px;
+  height: 40px;
+  font-size: 20px;
+  border: none;
+  display: block;
+  background-color: #999;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+#codey-Three{
+  display: none;
+  width: 150px;
+  margin: 0 auto;
+}
+.tank-3 {
+    position:absolute;
+    bottom: 20px;
+    left: 40px;
+}
+#view-button-4{
+  width: 200px;
+  height: 40px;
+  font-size: 20px;
+  border: none;
+  display: block;
+  background-color: #999;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+#codey-Four{
+  display: none;
+  width: 150px;
+  margin: 0 auto;
+}
+.tank-4 {
+    position:absolute;
+    bottom: 20px;
+    right: 40px;
+}
+.monitor-medical {
+    background-color: #ccc;
+    width: 600px;
+    height: 520px;
+    top: 25%;
+    right: 8%;
+    position: absolute;
+    padding: 30px;
+}
+.card {
+  font-size: 20px;
+  border: none;
+  display: inline-block;
+  background-color: #999;
+  margin: 8px;
+  font-family: 'Abel', sans-serif;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  width: 60px;
+}
+.doctor-text {
+font-family: 'Abel', sans-serif !important;
+color: #fff !important; 
+font-size: 24px; 
+padding: 0px 0 30px;
+}
+.com-card {
+  font-size: 20px;
+  border: none;
+  display: inline-block;
+  background-color: #999;
+  margin: 10px;
+  font-family: 'Abel', sans-serif;
+  color: #fff;
+  padding: 40px 10px;
+  text-align: center;
+  width: 76px;
+}
+.bugs {
+  margin: 10px;  
+}
+#bug-one {
+    width:95px;
+    display:none;
+    position: relative;
+    padding: 0 21px 0 0;
+}
+#bug-two {
+    width:95px;
+    display:none;
+    position: relative;
+    padding: 0 21px 0 0;
+}
+#bug-three {
+    width:95px;
+    display:none;
+    position: relative;
+    padding: 0 21px 0 0;
+}
+#bug-four {
+    width:95px;
+    display:none;
+    position: relative;
+    padding: 0 21px 0 0;
+}
+#bug-five {
+    width:95px;
+    display:none;
+    position: relative;
+    padding: 0 0px 0 0;
+}
+.profile-pic {
+    
+}
+.profile-text {
+    padding: 40px;
+    margin: 0 0 10px;
+}
+.profile-pic img{
+    width: 300px;
+    float: right;
+    margin: 40px;
+}
+.questions-background {
+    width:100%;
+    position:absolute;
+    top:0;
+    transition: opacity 1s ease-in-out;
+}
+.tilt {
+    transform: rotate(60deg);
+    width: 500px;
+    float:right;
+}
+.cofz-container {
+    margin: 0 auto;
+    text-align: center;
+}
+.cofz-question {
+    color: black;
+    font-family: 'GFS Didot', serif;
+    text-transform: uppercase;
+    position: absolute;
+    top: 350px;
+    left: 500px;
+    width:600px;
+    font-size:40px;
+    display: block;
+}
+.cofz_button-yes {
+    color: white;
+    background-color: black;
+    padding: 20px;
+    font-family: 'GFS Didot', serif;
+    position: absolute;
+    text-transform: uppercase;
+    top: 525px;
+    left: 550px;
+    width:200px;
+    font-size:30px;
+}
+.cofz_button-no {
+    color: white;
+    background-color: black;
+    padding: 20px;
+    font-family: 'GFS Didot', serif;
+    position: absolute;
+    text-transform: uppercase;
+    top: 525px;
+    left: 850px;
+    width:200px;
+    font-size:30px;
+}
+/************ SMALLER SCREEN CSS ************/
+@media only screen and (min-width: 800px) {
+    h1 {
+        font-size: 48px;
+    }
+    h2 {
+        font-size: 46px;
+        text-align:center;
+        color: #80b370;
+        padding: 40px 0 0;
+        margin:10px 20px 15px;
+    }
+    .button {
+        font-size:24px;
+    }
+    .topnav {
+        display:none;
+    }
+    nav {
+        width:100%;
+        background-color: #000;
+        text-align:right;
+        margin: 0 auto;
+        padding: 80px 0;
+        display:inherit;
+    }
+    nav a {
+        margin: 30px 90px 30px 30px;
+        font-size: 20px;
+    }
+    header {
+        font-size: 38px;
+        margin: 0 60px;
+    }
+    ol {
+    margin:0 auto;
+    padding: 40px 100px 100px;
+}
+    li {
+    font-family: 'Abel', sans-serif;
+    font-size: 36px;
+    line-height: 1.5;
+    color: #fff;  
+    text-align: left;
+    padding: 0 10px 10px;
+    font-weight: bold;
+}
+    
+
+}
+/************ LARGER SCREEN CSS ************/
+@media only screen and (min-width: 1400px) {
+     h1 {
+        font-size: 68px;
+    }
+    .button {
+        font-size:34px;
+    }
+    nav a {
+    font-size: 30px;
+    }
+    header {
+        font-size: 48px;
+    }
+}

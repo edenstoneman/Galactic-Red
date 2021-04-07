@@ -1,0 +1,16 @@
+body {
+    background-color: #fff;
+    font-family: 'GFS Didot', serif;
+}
+h1 {
+    font-size: 50px;
+}
+section {
+    margin: 200px; auto;
+    text-align: center;
+}
+section img {
+    width: 20%;
+    margin: 50px auto;
+    padding: 0 50px;
+}
