@@ -125,7 +125,7 @@ header img {
     border: 10px solid #80b370;
     margin: 45px 40px;
     z-index: -1; 
-    background-image:url(/workspace/backgroundimg.jpeg);
+    background-image:url(workspace/backgroundimg.jpeg);
     padding: 20px 20px 40px;
 }
 #welcome_message {
@@ -200,7 +200,7 @@ li {
     border: 10px solid #80b370;
     margin: 45px 40px;
     z-index: -1; 
-    background:url(/workspace/garage.jpg);
+    background:url(workspace/garage.jpg);
     padding: 20px 20px 40px;
 }
 .mars_rover_garage {
@@ -332,7 +332,7 @@ h2 span {
     border: 10px solid #80b370;
     margin: 45px 40px;
     z-index: -1; 
-    background:url(/workspace/numbers.jpg);
+    background:url(workspace/numbers.jpg);
     padding: 20px 20px 40px;
 }
 #martian_weight_converter {
@@ -427,7 +427,7 @@ h2 span {
     border: 10px solid #80b370;
     margin: 45px 40px 0px;
     z-index: -1; 
-    background-image:url(/workspace/mars-rover-pic.jpg);
+    background-image:url(workspace/mars-rover-pic.jpg);
     padding:20px 20px 40px;
 }
 
@@ -435,7 +435,7 @@ h2 span {
      border: 10px solid #80b370;
     margin: 45px 40px 0px;
     z-index: -1; 
-    background-image:url(/workspace/hex.jpg);
+    background-image:url(workspace/hex.jpg);
     background-size:cover;
     padding: 20px 0 80px;
 }
