@@ -1,0 +1,103 @@
+<!DOCUTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Reactor</title>
+
+        <link rel="icon" href="/img/main/GR-logo.png">
+        <link href="/workspace.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Abel&family=Do+Hyeon&family=Space+Mono:ital@0;1&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+         <div class="topnav">
+            <a href="#home" class="active"></a>
+            <div id="myLinks">
+                <a href="/jonzon/jonzon-rover-success.html">Workspace</a>
+                <a href="/jonzon/jonzon-base-status.html">Base Status</a>
+                <a href="/jonzon/jonzon-rover-transit.html">Rover</a>
+                <a href="/jonzon/jonzon-inbox-empty.html">Inbox</a>
+                <a href="/jonzon/jonzon-locked-base.html">My Profile</a>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+        <nav>
+            <a href="/jonzon/jonzon-rover-success.html">Workspace</a>
+            <a href="/jonzon/jonzon-base-status.html" class="highlight">Base Status</a>
+            <a href="/jonzon/jonzon-rover-transit.html">Rover</a>
+            <a href="/jonzon/jonzon-inbox-empty.html">Inbox</a>
+            <a href="/jonzon/jonzon-locked-base.html">My Profile</a>
+        </nav>       
+  <div id=''>
+    <div class="reactor">Reactor</div>
+        <div class="instructions">
+            <div class="instuctions-text">This is the base reactor. It should always be running above 75%. <br><br>Please run a diagnostics report and note what percentage it is currently running at. <br><br> IMPORTANT: To run, press R.<br><br>
+            </div>
+      <div>
+            <button class="converter_button" onclick="myFunction()">Input Percentage</button>
+            </div>
+            <br><br>
+            <a class="instuctions-text" href="/jonzon/jonzon-oxygen.html"  id="demo"></a>
+        </div>
+        <div class="monitor">
+            <div class="number">100%</div>
+            <div class="number">90%</div>
+            <div class="number">80%</div>
+            <div class="number">70%</div>
+            <div class="number">60%</div>
+            <div class="number">50%</div>
+            <div class="number">40%</div>
+            <div class="number">30%</div>
+            <div class="number">20%</div>
+            <div class="number">10%</div>
+            <div class="number">0%</div>
+            <div id='float-bar-1'></div>
+      </div> 
+      
+  </div>
+           
+        <script>
+            function myFunction() {
+              var text;
+              var incorrect;
+              var answer = prompt("Input the percentage the reactor is running at.", "0%");
+              switch(answer) {
+                case "80%" :
+                  text = "This reading is accurate. Click here ››";
+                  incorrect = ""
+                  break;
+                case "80" :
+                  text = "This reading is accurate. Click here ››";
+                  incorrect = ""
+                  break;
+                default:
+                  text = "";
+                  incorrect = "This reading is incorrect. Try again..."
+              }
+              document.getElementById("demo").innerHTML = text;
+              document.getElementById("incorrect").innerHTML = incorrect;
+            }
+        </script>
+
+        <script>
+            let ball = document.getElementById('float-bar-1');
+            
+            // Write your code below
+            function up(){
+              ball.style.bottom = '392px';
+            }
+
+            function down(){
+              ball.style.top = '150px';
+            }
+
+            document.addEventListener('keydown', up);
+        </script>
+    </body>
+</html>
