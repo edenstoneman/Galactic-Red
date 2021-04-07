@@ -1,0 +1,236 @@
+<!DOCUTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Medical Bay</title>
+
+        <link rel="icon" href="/img/main/GR-logo.png">
+        <link href="/workspace.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Abel&family=Do+Hyeon&family=Space+Mono:ital@0;1&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+         <div class="topnav">
+            <a href="#home" class="active"></a>
+            <div id="myLinks">
+                <a href="/evelyn/evelyn-rover-success.html">Workspace</a>
+                <a href="/evelyn/evelyn-base-status.html">Base Status</a>
+                <a href="/evelyn/evelyn-rover-transit.html">Rover</a>
+                <a href="/evelyn/evelyn-inbox-empty.html">Inbox</a>
+                <a href="/evelyn/evelyn-locked-base.html">My Profile</a>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+        <nav>
+            <a href="/evelyn/evelyn-rover-success.html">Workspace</a>
+            <a href="/evelyn/evelyn-base-status.html" class="highlight">Base Status</a>
+            <a href="/evelyn/evelyn-rover-transit.html">Rover</a>
+            <a href="/evelyn/evelyn-inbox-empty.html">Inbox</a>
+            <a href="/evelyn/evelyn-locked-base.html">My Profile</a>
+        </nav>       
+  <div id=''>
+    <div class="reactor">Medical Bay</div>
+        <div class="instructions">
+            <div class="instuctions-text">The Medical Bay needs replenishing but the doctor has left in a hurry.<br><br> Look through the doctor's notes to see how many bandages, syringes and antibiotics are needed. <br><br> IMPORTANT: The Doctor is rather cryptic...<br><br>
+            </div>
+      <div>
+            <button class="converter_button" onclick="myFunction()">Input Total Number of Supplies</button>
+            </div>
+            <br><br>
+            <a class="instuctions-text" href="/evelyn/evelyn-computer.html"  id="demo"></a>
+        </div>
+        <div class="monitor-medical">
+            <div class="doctor-text">Bandages: What has hands, but can’t clap?</div>
+            <div class="doctor-text">Syringes: What has one head, one foot and four legs?</div>
+            <div class="doctor-text">Antibiotics: What has one eye, but can’t see?</div>
+            <div class="card" id="list-item-four">Phone</div>
+            <div class="card" id="list-item-ten">Pen</div>
+            <div class="card" id="list-item-nine">Plate</div>
+            <div class="card" id="list-item-fourteen">Table</div>
+            <div class="card" id="list-item-sixteen">Mirror</div>
+            
+            <div class="card" id="list-item-one">Clock</div>
+            <div class="card" id="list-item-eleven">Chair</div>
+            <div class="card" id="list-item-three">Bed</div>
+            <div class="card" id="list-item-five">Window</div>
+            <div class="card" id="list-item-fifteen">Clock</div>
+            
+            <div class="card" id="list-item-twelve">Spoon</div>
+            <div class="card" id="list-item-seven">Thread</div>
+            <div class="card" id="list-item-twenty">Alarm</div>
+            <div class="card" id="list-item-seventeen">Book</div>
+            <div class="card" id="list-item-nineteen">Time</div>
+            
+            <div class="card" id="list-item-thirteen">Needle</div>
+            <div class="card" id="list-item-two">Neddle</div>
+            <div class="card" id="list-item-six">Door</div>
+            <div class="card" id="list-item-eight">Clock</div>
+            <div class="card" id="list-item-eighteen">Glass</div>
+      </div> 
+      
+  </div>
+           
+        <script>
+            let itemOne = document.getElementById('list-item-one');
+            let itemTwo = document.getElementById('list-item-two');
+            let itemThree = document.getElementById('list-item-three');
+            let itemFour = document.getElementById('list-item-four');
+            let itemFive = document.getElementById('list-item-five');
+            let itemSix = document.getElementById('list-item-six');
+            let itemSeven = document.getElementById('list-item-seven');
+            let itemEight = document.getElementById('list-item-eight');
+            let itemNine = document.getElementById('list-item-nine');
+            let itemTen = document.getElementById('list-item-ten');
+            let itemEleven = document.getElementById('list-item-eleven');
+            let itemTwelve = document.getElementById('list-item-twelve');
+            let itemThirteen = document.getElementById('list-item-thirteen');
+            let itemFourteen = document.getElementById('list-item-fourteen');
+            let itemFifteen = document.getElementById('list-item-fifteen');
+            let itemSixteen = document.getElementById('list-item-sixteen');
+            let itemSeventeen = document.getElementById('list-item-seventeen');
+            let itemEighteen = document.getElementById('list-item-eighteen');
+            let itemNineteen = document.getElementById('list-item-nineteen');
+            let itemTwenty = document.getElementById('list-item-twenty');
+            
+            function textChange(){
+            itemOne.innerHTML = '22';
+            itemTwo.innerHTML = '14';
+            itemThree.innerHTML = '56';
+            }
+            function textReturn(){
+            itemOne.innerHTML = 'Clock';
+            itemTwo.innerHTML = 'Needle';
+            itemThree.innerHTML = 'Bed';
+            }
+            
+            function textChangeB(){
+            itemFour.innerHTML = '26';
+            itemFive.innerHTML = '8';
+            itemSix.innerHTML = '67';
+            }
+            function textReturnB(){
+            itemFour.innerHTML = 'Phone';
+            itemFive.innerHTML = 'Window';
+            itemSix.innerHTML = 'Door';
+            }
+            
+            function textChangeC(){
+            itemSeven.innerHTML = '11';
+            itemEight.innerHTML = '4';
+            itemNine.innerHTML = '47';
+            }
+            function textReturnC(){
+            itemSeven.innerHTML = 'Thread';
+            itemEight.innerHTML = 'Clock';
+            itemNine.innerHTML = 'Plate';
+            }
+            
+            function textChangeD(){
+            itemTen.innerHTML = '19';
+            itemEleven.innerHTML = '15';
+            itemTwelve.innerHTML = '28';
+            }
+            function textReturnD(){
+            itemTen.innerHTML = 'Pen';
+            itemEleven.innerHTML = 'Chair';
+            itemTwelve.innerHTML = 'Spoon';
+            }
+            
+            function textChangeE(){
+            itemThirteen.innerHTML = '23';
+            itemFourteen.innerHTML = '89';
+            itemFifteen.innerHTML = '37';
+            }
+            function textReturnE(){
+            itemThirteen.innerHTML = 'Needle';
+            itemFourteen.innerHTML = 'Table';
+            itemFifteen.innerHTML = 'Clock';
+            }
+            
+            function textChangeF(){
+            itemSixteen.innerHTML = '36';
+            itemSeventeen.innerHTML = '18';
+            itemEighteen.innerHTML = '29';
+            }
+            function textReturnF(){
+            itemSixteen.innerHTML = 'Mirror';
+            itemSeventeen.innerHTML = 'Book';
+            itemEighteen.innerHTML = 'Glass';
+            }
+            
+            function textChangeG(){
+            itemNineteen.innerHTML = '39';
+            itemTwenty.innerHTML = '47';
+            }
+            function textReturnG(){
+            itemNineteen.innerHTML = 'Time';
+            itemTwenty.innerHTML = 'Alarm';
+            }
+            
+            itemOne.addEventListener('mouseover', textChange);
+            itemOne.addEventListener('mouseout', textReturn);
+            itemTwo.addEventListener('mouseover', textChange);
+            itemTwo.addEventListener('mouseout', textReturn);
+            itemThree.addEventListener('mouseover', textChange);
+            itemThree.addEventListener('mouseout', textReturn);
+            itemFour.addEventListener('mouseover', textChangeB);
+            itemFour.addEventListener('mouseout', textReturnB);
+            itemFive.addEventListener('mouseover', textChangeB);
+            itemFive.addEventListener('mouseout', textReturnB);
+            itemSix.addEventListener('mouseover', textChangeB);
+            itemSix.addEventListener('mouseout', textReturnB);
+            itemSeven.addEventListener('mouseover', textChangeC);
+            itemSeven.addEventListener('mouseout', textReturnC);
+            itemEight.addEventListener('mouseover', textChangeC);
+            itemEight.addEventListener('mouseout', textReturnC);
+            itemNine.addEventListener('mouseover', textChangeC);
+            itemNine.addEventListener('mouseout', textReturnC);
+            itemTen.addEventListener('mouseover', textChangeD);
+            itemTen.addEventListener('mouseout', textReturnD);
+            itemEleven.addEventListener('mouseover', textChangeD);
+            itemEleven.addEventListener('mouseout', textReturnD);
+            itemTwelve.addEventListener('mouseover', textChangeD);
+            itemTwelve.addEventListener('mouseout', textReturnD);
+            itemThirteen.addEventListener('mouseover', textChangeE);
+            itemThirteen.addEventListener('mouseout', textReturnE);
+            itemFourteen.addEventListener('mouseover', textChangeE);
+            itemFourteen.addEventListener('mouseout', textReturnE);
+            itemFifteen.addEventListener('mouseover', textChangeE);
+            itemFifteen.addEventListener('mouseout', textReturnE);
+            itemSixteen.addEventListener('mouseover', textChangeF);
+            itemSixteen.addEventListener('mouseout', textReturnF);
+            itemSeventeen.addEventListener('mouseover', textChangeF);
+            itemSeventeen.addEventListener('mouseout', textReturnF);
+            itemEighteen.addEventListener('mouseover', textChangeF);
+            itemEighteen.addEventListener('mouseout', textReturnF);
+            itemNineteen.addEventListener('mouseover', textChangeG);
+            itemNineteen.addEventListener('mouseout', textReturnG);
+            itemTwenty.addEventListener('mouseover', textChangeG);
+            itemTwenty.addEventListener('mouseout', textReturnG);
+            
+            function myFunction() {
+              var text;
+              var incorrect;
+              var answer = prompt("Input the number of supplies needed", "0");
+              switch(answer) {
+                case "92" :
+                  text = "The supplies have been ordered. Click here ››";
+                  incorrect = ""
+                  break;
+                default:
+                  text = "";
+                  incorrect = "This number is incorrect. Try again..."
+              }
+              document.getElementById("demo").innerHTML = text;
+              document.getElementById("incorrect").innerHTML = incorrect;
+            }
+        </script>
+
+    </body>
+</html>

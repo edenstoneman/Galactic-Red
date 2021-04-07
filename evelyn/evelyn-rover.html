@@ -1,0 +1,169 @@
+<!DOCUTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Mars Rover Garage</title>
+
+        <link rel="icon" href="/img/main/GR-logo.png">
+        <link href="/workspace.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Abel&family=Do+Hyeon&family=Space+Mono:ital@0;1&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <div class="topnav">
+            <a href="#home" class="active"></a>
+            <div id="myLinks">
+                <a href="/evelyn/evelyn-workspace.html">Workspace</a>
+                <a href="/evelyn/evelyn-locked-rover.html">Base Status</a>
+                <a href="/evelyn/evelyn-rover.html">Rover</a>
+                <a href="/evelyn/evelyn-inbox.html">Inbox</a>
+                <a href="/evelyn/evelyn-locked-rover.html">My Profile</a>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+        <nav>
+            <a href="/evelyn/evelyn-workspace.html">Workspace</a>
+            <a href="/evelyn/evelyn-locked-rover.html">Base Status</a>
+            <a href="/evelyn/evelyn-rover.html" class="highlight">Rover</a>
+            <a href="/evelyn/evelyn-inbox.html">Inbox</a>
+            <a href="/evelyn/evelyn-locked-rover.html">My Profile</a>
+        </nav>
+        
+        <section class="second_section">
+        <div class="mars_rover_garage">
+            <h2>
+                <span>Mars Rover Garage</span>
+            </h2>
+            
+            <h3 class="mars_rover_garage_intro">This is the <span>Mars Rover Garage.</span> As you can see, all of your supplies have been ordered and measured by Reginald Spinks. Unfortunately, he has calculated the weight of each item using <span>Earth Weight.</span> This means you will have to convert the items using the Martian Weight Converter. 
+                </h3>
+            <div class="supplies">
+                <div class="row">
+                    <div class="column">
+                        <div class="supplies_1">
+                            <h3 >Plants and Foliage</h3>
+                            <span class="material-icons icon md-48">
+                                filter_vintage
+                            </span>
+                            <p>Tree 225kg</p>
+                            <p>Flower  28kg</p>
+                            <p>Bush  160kg</p>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="supplies_2">
+                            <h3>Analysis Equipment</h3>
+                            <span class="material-icons icon md-48">
+                                biotech
+                            </span>
+                            <p>Ph Meter 5kg</p>
+                            <p>Infrared Scanner 42kg</p>
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="supplies_3">
+                            <h3>Sanitation Appliances</h3>
+                            <span class="material-icons icon md-48">
+                                sanitizer
+                            </span>
+                            <p>Sprayer 12kg</p>
+                            <p>Chemicals  16kg</p>
+                            <p>PPE 5kg</p>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="supplies_4">
+                            <h3>Agricultural Material</h3>
+                            <span class="material-icons icon md-48">
+                                spa
+                            </span>
+                            <p>Compost  14kg</p>
+                            <p>Fertilizer  21kg</p>
+                            <p>Herbicide 18kg</p>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="supplies_5">
+                            <h3>Reusable Water Tanks</h3>
+                            <span class="material-icons icon md-48">
+                                waves
+                            </span>
+                            <p>S Tank  15kg</p>
+                            <p>M Tank  40kg</p>
+                            <p>L Tank  80kg</p>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="supplies_6">
+                            <h3>Dynamic Solar Panels</h3>
+                            <span class="material-icons icon md-48">
+                                brightness_low
+                            </span>
+                            <p>Panel 32kg</p>
+                            <p>Cables 5kg</p>
+                            <p>Controller 14kg</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+        <section class="third_section">
+            <div id="martian_weight_converter" >
+                <h2>
+                    <span>Martian Weight Converter</span>
+                </h2>
+                <div class="converter">
+                    <div class="row">
+                        <div class="column">
+                            <div class="converter_column_1">
+                                <div class=converter_input>
+                                    <h3>Input the weight of an object :</h3>
+                                    <input  id="supplyinput" type="text" placeholder="Earth Weight" oninput="MartianWeightConverter(this.value)" onchange="MartianWeightConverter(this.value)">
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="converter_column_2">
+                                <div class="converter_output">
+                                    <h3>On Mars, this object weighs :</h3>
+                                    <div id="converter_output_answer" placeholder="0"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="first_section">
+           <div style="text-align: center !important; padding: 40px">
+                <a class="button" href="/evelyn/evelyn-load-rover.html">LOAD THE ROVER</a>
+            </div>
+            
+        </section>
+         <script>
+            function myFunction() {
+              var x = document.getElementById("myLinks");
+              if (x.style.display === "block") {
+                x.style.display = "none";
+              } else {
+                x.style.display = "block";
+              }
+            }
+        </script>
+        <script>
+            function MartianWeightConverter(valNum) {
+    var round =Math.round(valNum*0.377);
+  document.getElementById("converter_output_answer").innerHTML=round + 'kg' ;
+}
+        </script>
+    </body>
+</html>
