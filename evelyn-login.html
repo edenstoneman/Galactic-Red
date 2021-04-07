@@ -1,0 +1,79 @@
+
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>TER.1 Login</title>
+
+        <link rel="icon" href="/img/main/GR-logo.png">
+        <link href="/index.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Abel&family=Do+Hyeon&family=Space+Mono:ital@0;1&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <div class="topnav">
+        <a href="#home" class="active"></a>
+        <div id="myLinks">
+            <a href="/index.html">Home</a>
+            <a href="/coming-soon.html">Contact</a>
+            <a href="/entry.html">Workspace</a>
+            <a href="/coming-soon.html">Factions</a>
+            <a href="https://galacticred.godaddysites.com/">Heritage</a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+    <nav>
+        <a href="/index.html">Home</a>
+        <a href="/coming-soon.html">Contact</a>
+        <a href="/entry.html">Workspace</a>
+        <a href="/coming-soon.html">Factions</a>
+        <a href="https://galacticred.godaddysites.com/">Heritage</a>
+    </nav>
+    <div>
+        <img src="/img/main/GR-rightside.jpg" class="GR-background">
+    </div>
+       <!-- Button to open the modal login form -->
+        <div class="loginpage">
+            <h1>TER.1</h1>
+            <p>This is TER.1, otherwise known as the Terraforming department. <br><br>If you have access to a TER.1 workspace, please enter your login details.</p>
+            <button class="enterbutton" onclick="document.getElementById('id01').style.display='block'">Enter</button>
+        </div>
+
+<!-- The Modal -->
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'"
+class="close" title="Close Modal">&times;</span>
+
+  <!-- Modal Content -->
+  <form class="modal-content animate" action="/action_page.php">
+    <div class="imgcontainer">
+      <img src="/img/main/GR-logo.png" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+
+      <label for="psw"><b>Password</b></label>
+      <input type="text" placeholder="Enter Password" name="psw" required>
+
+      <button class="loginbutton" type="button" onClick="location.href='/evelyn/evelyn-welcome.html'">Login</button>
+    </div>
+  </form>
+</div>
+        <script>
+        function myFunction() {
+          var x = document.getElementById("myLinks");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+          }
+        }
+    </script>
+    </body>
+</html>

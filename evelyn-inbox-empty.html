@@ -1,0 +1,59 @@
+<!DOCUTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Inbox</title>
+
+        <link rel="icon" href="/img/main/GR-logo.png">
+        <link href="/workspace.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Abel&family=Do+Hyeon&family=Space+Mono:ital@0;1&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+         <div class="topnav">
+            <a href="#home" class="active"></a>
+            <div id="myLinks">
+                <a href="/evelyn/evelyn-rover-success.html">Workspace</a>
+                <a href="/evelyn/evelyn-base-status.html">Base Status</a>
+                <a href="/evelyn/evelyn-rover-transit.html">Rover</a>
+                <a href="/evelyn/evelyn-inbox-empty.html">Inbox</a>
+                <a href="/evelyn/evelyn-locked-base.html">My Profile</a>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+        <nav>
+            <a href="/evelyn/evelyn-rover-success.html">Workspace</a>
+            <a href="/evelyn/evelyn-base-status.html">Base Status</a>
+            <a href="/evelyn/evelyn-rover-transit.html">Rover</a>
+            <a href="/evelyn/evelyn-inbox-empty.html" class="highlight">Inbox</a>
+            <a href="/evelyn/evelyn-locked-base.html">My Profile</a>
+        </nav>
+        <div>
+            <header>
+                Inbox
+            </header>
+        </div>
+        
+        <section class="first_section">
+        <div class="mars_rover_garage">
+            <p>Inbox Empty</p>
+        </div>
+        </section>
+         <script>
+            function myFunction() {
+              var x = document.getElementById("myLinks");
+              if (x.style.display === "block") {
+                x.style.display = "none";
+              } else {
+                x.style.display = "block";
+              }
+            }
+        </script>
+    </body>
+</html>
