@@ -1,0 +1,73 @@
+<!DOCUTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Evelyn's Work Station</title>
+
+        <link rel="icon" href="img/main/GR-logo.png">
+        <link href="workspace.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Abel&family=Do+Hyeon&family=Space+Mono:ital@0;1&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+         <div class="topnav">
+            <a href="#home" class="active"></a>
+            <div id="myLinks">
+                <a href="evelyn-workspace.html">Workspace</a>
+                <a href="evelyn-locked-rover.html">Base Status</a>
+                <a href="evelyn-rover.html">Rover</a>
+                <a href="evelyn-inbox.html">Inbox</a>
+                <a href="evelyn-locked-rover.html">My Profile</a>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+        <nav>
+            <a href="evelyn-workspace.html" class="highlight">Workspace</a>
+            <a href="evelyn-locked-rover.html">Base Status</a>
+            <a href="evelyn-rover.html">Rover</a>
+            <a href="evelyn-inbox.html">Inbox</a>
+            <a href="evelyn-locked-rover.html">My Profile</a>
+        </nav>
+        <div>
+            <header>
+                Evelyn May's Work Station TER.1
+            </header>
+        </div>
+        
+        <section class="first_section">
+            <div class="row">
+                <div class="column">
+                    <div class="checklist">
+                        <h2>My Checklist</h2>
+                        <ol>
+                            <li>Check Inbox.</li>
+                            <li>Monitor Base Status.</li>
+                            <li>Update personal information in My Profile.</li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="outpost">
+                    <img src="img/main/GR-parallax-2.jpg">
+                    </div>
+                </div>
+             </div>
+        </section>
+         <script>
+            function myFunction() {
+              var x = document.getElementById("myLinks");
+              if (x.style.display === "block") {
+                x.style.display = "none";
+              } else {
+                x.style.display = "block";
+              }
+            }
+        </script>
+    </body>
+</html>
